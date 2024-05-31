@@ -1,0 +1,30 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		// cuda nvcc /usr/bin/nvcc
+		{
+			"label": "nvcc",
+			"type": "shell",
+			"command": "/usr/bin/nvcc",
+			"args": [
+				"/${workspaceFolder}/src/main.cu",
+				"-o",
+				"/${workspaceFolder}/build/${fileBasenameNoExtension}",
+				"-g",
+				"-G",
+				"-O0",
+				"-I",
+				"/${workspaceFolder}/include/"
+				
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": [
+				"$nvcc"
+			]
+		},
+		
+	]
+}
