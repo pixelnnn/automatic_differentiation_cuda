@@ -20,7 +20,7 @@ g++ ./src/main.cpp -o ./build/main_g++ -lm -lstdc++ -I include/
 The program accelerated with CUDA runs approximately 0.5 times faster than the program without CUDA.
 
 Without rigorous testing, the code compiled with nvcc is `main.cu`, and the code compiled with g++ as `main.cpp` is a symbolic link of `main.cu`.
-
+Note: If you plan to compile using g++, please comment out `#define DEVICE_GPU` in `./include/config.h:17`
 
 **NOTE:** 
 
