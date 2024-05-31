@@ -10,7 +10,7 @@ This is a simple framework for automatic differentiation in C++ with CUDA. There
 *Compiler: nvcc or g++*
 ```
 cd auto_grad_cuda
-nvcc ./src/main.cu -o ./build/main_g++ -lm -lstdc++ -I include/
+nvcc ./src/main.cu -o ./build/main_cuda -lm -lstdc++ -I include/
 # or
 g++ ./src/main.cpp -o ./build/main_g++ -lm -lstdc++ -I include/
 ```
